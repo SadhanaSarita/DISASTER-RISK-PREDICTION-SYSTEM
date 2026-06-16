@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Uttarakhand Disaster Alert Bulletin</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f1a;--surf:#131929;--bdr:#1e2d45;--acc:#00d9a3;--acc2:#4da6ff;--txt:#e2eaf6;--mut:#7a91b0;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Syne',sans-serif;background:var(--bg);color:var(--txt);}
+.hero{background:linear-gradient(135deg,#0b1628,#1a0a0a 60%,#0d0d1a);
+  border-bottom:1px solid var(--bdr);padding:40px 48px;}
+.htag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;
+  color:#ff4444;text-transform:uppercase;margin-bottom:10px;}
+.hero h1{font-size:clamp(20px,3.5vw,36px);font-weight:800;margin-bottom:6px;}
+.hero h1 em{color:#ff4444;font-style:normal;}
+.hsub{color:var(--mut);font-size:13px;font-family:'IBM Plex Mono',monospace;}
+.sec{padding:32px 48px;border-bottom:1px solid var(--bdr);}
+.stitle{font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--acc);font-family:'IBM Plex Mono',monospace;margin-bottom:20px;}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;}
+.scard{background:var(--surf);border:1px solid var(--bdr);border-radius:8px;
+  padding:20px;text-align:center;}
+.snum{font-size:36px;font-weight:800;}
+.slbl{font-size:11px;color:var(--mut);margin-top:4px;letter-spacing:1px;}
+.red{color:#c1121f;} .orange{color:#f4a261;} .yellow{color:#e9c46a;} .green{color:#2d6a4f;}
+.district-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.dcard{background:var(--surf);border-radius:8px;padding:16px;border-left:4px solid #333;}
+.dname{font-size:14px;font-weight:700;margin-bottom:4px;}
+.dalert{font-size:13px;font-weight:600;margin-bottom:6px;}
+.dscores{font-size:11px;color:var(--mut);font-family:'IBM Plex Mono',monospace;}
+.twrap{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;font-size:12px;}
+thead tr{background:#1a0505;border-bottom:2px solid #c1121f;}
+th{padding:10px 14px;text-align:left;font-size:10px;letter-spacing:1px;
+  text-transform:uppercase;color:#ff6666;font-weight:600;}
+td{padding:10px 14px;border-bottom:1px solid var(--bdr);vertical-align:top;}
+tbody tr:hover{background:#12233a;}
+.foot{padding:20px 48px;color:var(--mut);font-size:11px;font-family:'IBM Plex Mono',monospace;}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="htag">⚠ DISASTER ALERT BULLETIN — UTTARAKHAND</div>
+  <h1>Disaster <em>Risk Alert</em> Report</h1>
+  <div class="hsub">NASA POWER MERRA-2 + ML Prediction Engine &nbsp;|&nbsp; Mar 2025 – Mar 2026</div>
+</div>
+
+<div class="sec">
+  <div class="stitle">Alert Summary</div>
+  <div class="summary-grid">
+    <div class="scard"><div class="snum red">31</div><div class="slbl">🔴 Red (Emergency)</div></div>
+    <div class="scard"><div class="snum orange">1926</div><div class="slbl">🟠 Orange (Warning)</div></div>
+    <div class="scard"><div class="snum yellow">12441</div><div class="slbl">🟡 Yellow (Watch)</div></div>
+    <div class="scard"><div class="snum" style="color:var(--acc2)">14398</div><div class="slbl">Total Alerts</div></div>
+    <div class="scard"><div class="snum" style="color:var(--acc)">10</div><div class="slbl">Districts Affected</div></div>
+    <div class="scard"><div class="snum" style="color:var(--mut)">360</div><div class="slbl">Alert Days</div></div>
+  </div>
+</div>
+
+<div class="sec">
+  <div class="stitle">Current District Status — 28 Feb 2026</div>
+  <div class="district-grid">
+    <div class="dcard" style="border-left:4px solid #f4a261">
+      <div class="dname">Uttarkashi</div>
+      <div class="dalert" style="color:#f4a261">🟠 Warning</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️3.2 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Bageshwar</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.6 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Chamoli</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Champawat</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Haridwar</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.6 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Dehradun</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Nainital</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Pauri</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Pithoragarh</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.8 &nbsp;
+        🌡️1.8
+      </div>
+    </div>
+    <div class="dcard" style="border-left:4px solid #e9c46a">
+      <div class="dname">Tehri</div>
+      <div class="dalert" style="color:#e9c46a">🟡 Watch</div>
+      <div class="dscores">
+        🔥1.8 &nbsp;
+        🌊1.8 &nbsp;
+        ⛰️1.6 &nbsp;
+        🌡️1.8
+      </div>
+    </div></div>
+</div>
+
+<div class="sec">
+  <div class="stitle">Top Red (Emergency) Alerts</div>
+  <div class="twrap">
+    <table>
+      <thead>
+        <tr><th>Date</th><th>District</th><th>Disaster</th><th>Level</th><th>Score</th><th>Message</th></tr>
+      </thead>
+      <tbody>
+    <tr>
+      <td>2025-03-14</td>
+      <td><b>Champawat</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Champawat. Max temperature 32.1°C. Stay indoors,...</td>
+    </tr>
+    <tr>
+      <td>2025-03-21</td>
+      <td><b>Champawat</b></td>
+      <td>🔴 Forest Fire</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme forest fire risk in Champawat. Humidity critically low at 32%...</td>
+    </tr>
+    <tr>
+      <td>2025-03-26</td>
+      <td><b>Dehradun</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Dehradun. Max temperature 30.5°C. Stay indoors, ...</td>
+    </tr>
+    <tr>
+      <td>2025-03-27</td>
+      <td><b>Champawat</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Champawat. Max temperature 36.1°C. Stay indoors,...</td>
+    </tr>
+    <tr>
+      <td>2025-03-30</td>
+      <td><b>Champawat</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Champawat. Max temperature 33.4°C. Stay indoors,...</td>
+    </tr>
+    <tr>
+      <td>2025-04-07</td>
+      <td><b>Dehradun</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Dehradun. Max temperature 32.7°C. Stay indoors, ...</td>
+    </tr>
+    <tr>
+      <td>2025-04-11</td>
+      <td><b>Haridwar</b></td>
+      <td>🔴 Forest Fire</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme forest fire risk in Haridwar. Humidity critically low at 37%,...</td>
+    </tr>
+    <tr>
+      <td>2025-04-27</td>
+      <td><b>Pauri</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Pauri. Max temperature 33.4°C. Stay indoors, avo...</td>
+    </tr>
+    <tr>
+      <td>2025-04-28</td>
+      <td><b>Pauri</b></td>
+      <td>🔴 Heat Wave</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme heat wave in Pauri. Max temperature 33.5°C. Stay indoors, avo...</td>
+    </tr>
+    <tr>
+      <td>2025-05-01</td>
+      <td><b>Haridwar</b></td>
+      <td>🔴 Forest Fire</td>
+      <td style="color:#c1121f;font-weight:700">Emergency</td>
+      <td>3.60</td>
+      <td style="font-size:12px">EMERGENCY: Extreme forest fire risk in Haridwar. Humidity critically low at 36%,...</td>
+    </tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="foot">
+  Uttarakhand Disaster Prediction System &middot; Step 5: Alert Engine &middot; NASA POWER MERRA-2
+</div>
+</body>
+</html>
